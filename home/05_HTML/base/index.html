@@ -10,12 +10,13 @@
     </style>
 </head>
 <body>
-<table width="700px" border="1">
+<table width="700px">
     <tr>
         <td>
             <h5>Простая форма поиска с вариантами:</h5>
-            <form id="my_form" name="Запрос" method="get" action="http://sc.it-academy.by/fe/form.php">
-                <p>Строка поиска<br>
+            <fieldset>
+                <legend>Строка поиска</legend>
+                <form id="my_form" name="Запрос" method="get" action="http://sc.it-academy.by/fe/form.php">
                     <input type="text" name="Строка поиска" maxlength="10">
                     <input type="submit" value="Искать">
                     <br>
@@ -23,14 +24,15 @@
                         сайте</label>
                     <label><input type="radio" name="radio_group" value="value_02" id="Checkbox_group2_0" checked>в
                         google</label>
-                </p>
-            </form>
+                </form>
+            </fieldset>
         </td>
         <td>
             <h5>Простая форма поиска с вариантами:</h5>
-            <form id="поиск с вариантами" name="поиск с вариантами" method="get"
-                  action="http://sc.it-academy.by/fe/form.php">
-                <p>Строка поиска<br>
+            <fieldset>
+                <legend>Строка поиска</legend>
+                <form id="поиск с вариантами" name="поиск с вариантами" method="get"
+                      action="http://sc.it-academy.by/fe/form.php">
                     <input type="text" name="Строка поиска" autofocus required>
                     <label for="поиск с вариантами">*</label>
                     <input type="submit" value="Искать">
@@ -39,15 +41,16 @@
                         сайте</label>
                     <label><input type="radio" name="radio_group" value="value_02" id="Checkbox_group2" checked>в
                         google</label>
-                </p>
-            </form>
+                </form>
+            </fieldset>
         </td>
     </tr>
     <tr>
         <td>
             <h5>Простая форма авторизации:</h5>
-            <form id="Авторизация" name="Авторизация" method="get" action="http://sc.it-academy.by/fe/form.php">
-                <p>Авторизируйтесь<br>
+            <fieldset>
+                <legend>Авторизируйтесь</legend>
+                <form id="Авторизация" name="Авторизация" method="get" action="http://sc.it-academy.by/fe/form.php">
                     <input type="text" id="login" name="login" autofocus required>
                     <label for="login">* Логин</label>
                     <br><br>
@@ -58,13 +61,14 @@
                         <input type="checkbox" name="hobby[]"> Оставаться в системе
                     </label><br>
                     <input type="submit" value="Войти">
-                </p>
-            </form>
+                </form>
+            </fieldset>
         </td>
         <td>
             <h5>Опрос(голосование):</h5>
-            <form id="Опрос" name="Опрос" method="get" action="http://sc.it-academy.by/fe/form.php">
-                <p>Как вам?<br>
+            <fieldset>
+                <legend>Как вам?</legend>
+                <form id="Опрос" name="Опрос" method="get" action="http://sc.it-academy.by/fe/form.php">
                     <label><input type="radio" name="radio_group" value="value_01" id="Checkbox_group11"
                                   checked>ничего</label><br>
                     <label><input type="radio" name="radio_group" value="value_02" id="Checkbox_group22"
@@ -75,15 +79,16 @@
                                   checked>супер</label><br>
                     <input type="hidden" name="date_voite" value="2013.12.31">
                     <input type="submit" value="Отправить">
-                </p>
-            </form>
+                </form>
+            </fieldset>
         </td>
     </tr>
     <tr>
         <td>
             <h5>Отзыв:</h5>
-            <form id="отзыв" name="отзыв" method="post" action="http://sc.it-academy.by/fe/form.php">
-                <p>Оставьте ваш отзыв<br>
+            <fieldset>
+                <legend>Оставьте ваш отзыв</legend>
+                <form id="отзыв" name="отзыв" method="post" action="http://sc.it-academy.by/fe/form.php">
                     <input type="text" id="имя" name="имя" autofocus required>
                     <label for="имя">* Имя</label>
                     <br><br>
@@ -92,13 +97,14 @@
                     <br>
                     <textarea name="tex_area" lang="ru" placeholder="Форма отправки"></textarea><br>
                     <input type="submit" value="Отправить">
-                </p>
-            </form>
+                </form>
+            </fieldset>
         </td>
         <td>
             <h5>Выпадающий и мульти списки:</h5>
-            <form id="списки" name="списки" method="get" action="http://sc.it-academy.by/fe/form.php">
-                <p>Города РБ<br>
+            <fieldset>
+                <legend>Города РБ</legend>
+                <form id="списки" name="списки" method="get" action="http://sc.it-academy.by/fe/form.php">
                     <select name="list" id="list1">
                         <option value="1">Брест</option>
                         <option value="2">Минск</option>
@@ -117,36 +123,38 @@
                         </optgroup>
                     </select>
                     <input type="submit" value="Ок">
-                </p>
-            </form>
+                </form>
+            </fieldset>
         </td>
     </tr>
     <tr>
         <td>
             <h5>Загрузка файла на сервер:</h5>
-            <form id="загрузка" name="загрузка" method="post" action="http://sc.it-academy.by/fe/form.php"
-                  enctype="multipart/form-data">
-                <p>Upload<br>
+            <fieldset>
+                <legend>Upload</legend>
+                <form id="загрузка" name="загрузка" method="post" action="http://sc.it-academy.by/fe/form.php"
+                      enctype="multipart/form-data">
                     Файл:<br>
                     <input type="file" name="file_field" dir="ltr"><br>
                     Срок хранения (года):<br>
                     <input type="text" id="срок" name="срок">
                     <input type="submit" value="Загрузить">
-                </p>
-            </form>
+                </form>
+            </fieldset>
         </td>
         <td>
             <h5>Валидация данных HTML5:</h5>
-            <form id="валидация" name="валидация" method="get" action="http://sc.it-academy.by/fe/form.php"
-                  enctype="multipart/form-data">
-                <p>Строка поиска<br>
+            <fieldset>
+                <legend>Строка поиска</legend>
+                <form id="валидация" name="валидация" method="get" action="http://sc.it-academy.by/fe/form.php"
+                      enctype="multipart/form-data">
                     <input type="text" name="поиск" placeholder="Только русские буквы"><br>
                     <small><em>Телефонный номер в формате</em><br>
                         +<em>ХХХ-ХХ-ХХХХХХХ, где Х - любое число</em></small><br>
                     <input type="text" name="номер" placeholder="+375-29-1234567"><br>
                     <input type="submit" value="Проверить">
-                </p>
-            </form>
+                </form>
+            </fieldset>
         </td>
     </tr>
 </table>
