@@ -1,0 +1,25 @@
+<svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <title>Layer 1</title>
+  <g stroke="null">
+   <g stroke="null">
+    <g stroke="null">
+     <circle stroke="null" r="19" fill="url(#svg_26)" cy="26" cx="25.5"/>
+     <path stroke="null" fill="url(#svg_25)" d="m25.5,41.83337c-9.13253,0 -16.5625,-7.10287 -16.5625,-15.83333c0,-8.73042 7.42997,-15.83333 16.5625,-15.83333c9.13289,0 16.5625,7.10291 16.5625,15.83333c0,8.73046 -7.42961,15.83333 -16.5625,15.83333z"/>
+    </g>
+    <polygon stroke="null" points="24.91765594482422,18.837980270385742 16.8046875,26.59375 24.91765594482422,34.349517822265625 24.91765594482422,30.236312866210938 35.4375,30.236312866210938 35.4375,22.95123291015625 24.91765594482422,22.95123291015625 " opacity="0.3" id="svg_24"/>
+    <polygon stroke="null" points="24.29656219482422,18.244230270385742 16.18359375,26 24.29656219482422,33.75581359863281 24.29656219482422,29.64260482788086 34.81640625,29.64260482788086 34.81640625,22.35748291015625 24.29656219482422,22.35748291015625 " id="svg_23" fill="#FFFFFF"/>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <linearGradient gradientTransform="matrix(0.07763674855232239,0,0,0.07421877235174179,5.625,7)" y2="256" y1="256" x2="512" x1="0" id="svg_26" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#33B49D" offset="0"/>
+   <stop stop-color="#00A185" offset="1"/>
+  </linearGradient>
+  <linearGradient gradientTransform="matrix(0.07763674855232239,0,0,0.07421877235174179,5.625,7)" y2="256.00052" y1="256.00052" x2="469.33334" x1="42.66666" id="svg_25" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#00A185" offset="0"/>
+   <stop stop-color="#33B49D" offset="1"/>
+  </linearGradient>
+ </defs>
+</svg>
