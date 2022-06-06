@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .r1 {
+            width: auto;
+            height: auto;
+            padding: 30px 30px 40px 40px;
+            background-image: url(r-b.png), url(l-b.png), url(l-t.png), url(r-t.png), url(l.png), url(r.png), url(t.png), url(b.png);
+            background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat-y, repeat-y, repeat-x, repeat-x;
+            background-position: bottom right, bottom left, top left, top right, left, right, top, bottom;
+            margin-bottom: 20px;
+        }
+
+        .r2 {
+            background: url(l-t.png) no-repeat top left,
+            url(r-t.png) no-repeat top right,
+            url(l-b.png) no-repeat bottom left,
+            url(r-b.png) no-repeat bottom right,
+            url(l.png) repeat-y left,
+            url(t.png) repeat-x top,
+            url(r.png) repeat-y right,
+            url(b.png) repeat-x bottom;
+            width: auto;
+            height: auto;
+            padding: 40px;
+            margin-bottom: 20px;
+        }
+
+        .r3 {
+            border-style: solid;
+            border-width: 40px;
+            width: auto;
+            height: auto;
+            border-image-source: url(ramka.png);
+            border-image-slice: 100;
+            border-image-repeat: stretch;
+            border-image-width: 80px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="r1">
+    <h2>Домашнее задание 4</h2>
+    <p>
+        Создать проект DIV_FRAME. Добавить в проект из библиотеки картинку ramka.png. Разрезать ramka.png и сверстать
+        резиновый фон, какой приведён ниже.
+        Текст можно использовать любой, но без жёстких переносов строк, чтобы мог растягиваться на произвольную ширину.
+        Размеры рамки должны зависеть от количества текста в ней и от размеров окна браузера (т.е. рамка по ширине — на
+        всю ширину окна браузера, и имеет такую высоту, чтобы вместить содержащийся в ней текст).
+    </p>
+</div>
+<div class="r2">
+    <h2>Домашнее задание 4</h2>
+    <p>
+        Создать проект DIV_FRAME. Добавить в проект из библиотеки картинку ramka.png. Разрезать ramka.png и сверстать
+        резиновый фон, какой приведён ниже.
+        Текст можно использовать любой, но без жёстких переносов строк, чтобы мог растягиваться на произвольную ширину.
+        Размеры рамки должны зависеть от количества текста в ней и от размеров окна браузера (т.е. рамка по ширине — на
+        всю ширину окна браузера, и имеет такую высоту, чтобы вместить содержащийся в ней текст).
+    </p>
+</div>
+<div class="r3">
+    <h2>Домашнее задание 4</h2>
+    <p>
+        Создать проект DIV_FRAME. Добавить в проект из библиотеки картинку ramka.png. Разрезать ramka.png и сверстать
+        резиновый фон, какой приведён ниже.
+        Текст можно использовать любой, но без жёстких переносов строк, чтобы мог растягиваться на произвольную ширину.
+        Размеры рамки должны зависеть от количества текста в ней и от размеров окна браузера (т.е. рамка по ширине — на
+        всю ширину окна браузера, и имеет такую высоту, чтобы вместить содержащийся в ней текст).
+    </p>
+</div>
+<div style="width: auto; height: auto; margin-bottom: 10px; background: url(l.png) repeat-y left">
+    <div style="background: url(t.png) repeat-x top">
+        <div style="background: url(r.png) repeat-y right">
+            <div style="background: url(b.png) repeat-x bottom">
+                <div style="background: url(l-t.png) no-repeat top left">
+                    <div style="background: url(r-t.png) no-repeat top right">
+                        <div style="background: url(l-b.png) no-repeat bottom left">
+                            <div style="background: url(r-b.png) no-repeat bottom right">
+                                <div style="padding: 30px 30px 40px 40px">
+                                    <h2>Домашнее задание 4</h2>
+                                    <p>
+                                        Создать проект DIV_FRAME. Добавить в проект из библиотеки картинку ramka.png.
+                                        Разрезать ramka.png и сверстать
+                                        резиновый фон, какой приведён ниже.
+                                        Текст можно использовать любой, но без жёстких переносов строк, чтобы мог
+                                        растягиваться на произвольную ширину.
+                                        Размеры рамки должны зависеть от количества текста в ней и от размеров окна
+                                        браузера (т.е. рамка по ширине — на
+                                        всю ширину окна браузера, и имеет такую высоту, чтобы вместить содержащийся в
+                                        ней текст).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
