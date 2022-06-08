@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03_CSS_Responsive_navigation</title>
+</head>
+<style>
+    @media all and (min-width: 630px) {
+        ul {
+            padding-left: 0;
+        }
+
+        li {
+            float: left;
+            background: #B6B6B6;
+            color: rgba(116, 106, 115, 0.62);
+            width: 100px;
+            line-height: 23px;
+            display: block;
+            border: 1px solid black;
+            border-radius: 3px 3px;
+            -moz-transition: all 0.3s 0.03s ease;
+            -o-transition: all 0.3s 0.03s ease;
+            -webkit-transition: all 0.3s 0.03s ease;
+        }
+
+        li ul {
+            position: absolute;
+            display: none;
+        }
+
+        li :hover {
+            background: rgba(41, 106, 140, 0.49);
+        }
+
+        li:hover ul {
+            display: block;
+        }
+
+        li:hover ul li {
+            float: none;
+        }
+    }
+
+    @media all and (max-width: 629px) {
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            background: #B6B6B6;
+            color: rgba(116, 106, 115, 0.62);
+            width: 100px;
+            line-height: 23px;
+            display: block;
+            border: 1px solid black;
+            border-radius: 3px 3px;
+            -moz-transition: all 0.3s 0.03s ease;
+            -o-transition: all 0.3s 0.03s ease;
+            -webkit-transition: all 0.3s 0.03s ease;
+        }
+
+        li:hover ul {
+            display: block;
+        }
+
+        ul li {
+            position: relative;
+        }
+
+        li ul {
+            position: absolute;
+            padding-left: 101px;
+            top: 0;
+            display: none;
+        }
+
+        li :hover {
+            background: rgba(41, 106, 140, 0.49);
+        }
+
+        li:hover ul li {
+            float: none;
+        }
+    }
+</style>
+<body>
+<ul>
+    <li>Понедельник
+        <ul>
+            <li>Завтрак</li>
+            <li>Обед</li>
+            <li>Ужин</li>
+        </ul>
+    </li>
+    <li>Вторник
+        <ul>
+            <li>Завтрак</li>
+            <li>Обед</li>
+            <li>Ужин</li>
+        </ul>
+    </li>
+    <li>Среда
+        <ul>
+            <li>Завтрак</li>
+            <li>Обед</li>
+            <li>Ужин</li>
+        </ul>
+    </li>
+    <li>Четверг
+        <ul>
+            <li>Завтрак</li>
+            <li>Обед</li>
+            <li>Ужин</li>
+        </ul>
+    </li>
+    <li>Пятница
+        <ul>
+            <li>Завтрак</li>
+            <li>Обед</li>
+            <li>Ужин</li>
+        </ul>
+    </li>
+    <li>Суббота
+        <ul>
+            <li>Завтрак</li>
+            <li>Обед</li>
+            <li>Ужин</li>
+        </ul>
+    </li>
+</ul>
+</body>
+</html>
