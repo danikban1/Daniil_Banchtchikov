@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+</head>
+<style>
+    .border {
+        border: 1px solid lightgray;
+        border-radius: 0 10px 0 10px;
+        margin-bottom: -16px;
+        width: 620px;
+        height: 110px;
+    }
+
+    a[href$="#arrow"]::before {
+        content: url(arrow.png)
+    }
+
+    a[href$="#file"]::before {
+        content: url(file.jpeg)
+    }
+
+    a[href$="#word"]::after {
+        content: url(word.jpeg)
+    }
+
+    a[href$="#pdf"]::after {
+        content: url(pdf.png)
+    }
+
+    a[href$="#archive"]::after {
+        content: url(archive.gif)
+    }
+
+    .word:hover::after {
+        content: url(word.jpeg);
+    }
+
+    .pdf:hover::after {
+        content: url(pdf.png);
+    }
+
+    .archive:hover::after {
+        content: url(archive.gif);
+    }
+</style>
+<body>
+<h1>Форматы файлов.</h1>
+<p class="border">
+    .DOC или .doc (от англ. <a href="#arrow">document</a>)-расширение имени файла, используемое для
+    файлов,<br>
+    представляющих текст, с размёткой или без. Расширение .DOC часто использовалась для<br>
+    обозначения простых текстовых файлов без оформления, однако позже стало<br>
+    использоваться для двоичных форматов с размёткой.<br>
+    <a href="#word">Документ MS Word</a>
+</p>
+<p class="border">
+    Portable Document Format (<a href="#arrow">PDF</a>) - межплатформенный формат электронных документов,<br>
+    разработанный фирмой Adobe Systems с использованием ряда возможностей языка<br>
+    Postscript. <br>
+    <a href="#pdf">Документ PDF</a>
+</p>
+<p class="border">
+    ZIP-популярный формат сжатия данных и архивации файлов. Файл в этом формате<br>
+    обычно имеет расширение <a href="#arrow">.zip</a> и хранит в сжатом или несжатом виде один или несколько<br>
+    файлов, которые можно из него извлечь путём распаковки с помощью специальной<br>
+    программы.<br>
+    <a href="#archive">Архив</a>
+</p><br>
+<h2>Это список файлов</h2>
+<div><a class="word" href="#file">Документ MS Word</a></div>
+<div><a class="pdf" href="#file">Документ PDF</a></div>
+<div><a class="archive" href="#file">Архив</a></div>
+</body>
+</html>
